@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'corsheaders',
     'road_maps',
+    'weather', #add
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework_simplejwt',
-    'rest_framework.authtoken',
+    'rest_framework.authtoken',    
 ]
 
 MIDDLEWARE = [
@@ -169,3 +170,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+DATA_GO_KR_API_KEY = 'StF%2FsAkptwvKJivZfN7%2BSGpx6Nca7vQilpUZjIe%2FprXpFV3BtKPuSqo2bt5koh9fejiLLiHusHhFtlDxvGUa9A%3D%3D' #공공데이터 api
