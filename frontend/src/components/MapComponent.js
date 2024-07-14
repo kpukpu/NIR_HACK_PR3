@@ -17,7 +17,7 @@ const MapComponent = () => {
             const interval = setInterval(() => {
                 trafficLayer.setMap(null);
                 trafficLayer.setMap(map);
-            }, 300000);
+            }, 600000);
 
             return () => clearInterval(interval);
         };
